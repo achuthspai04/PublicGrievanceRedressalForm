@@ -1,0 +1,537 @@
+.baground-vectors-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .logo-icon {
+    width: 330.8px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .public-grievance-redressal {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .frame-child,
+  .header {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 16.6px;
+    gap: 43.2px;
+    z-index: 1;
+  }
+  .frame-child {
+    width: 815px;
+    height: 1031px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-cornflowerblue);
+    border: 1px solid var(--color-red);
+    display: none;
+  }
+  .full-name,
+  .label {
+    font-weight: 500;
+    position: relative;
+    line-height: 150%;
+  }
+  .full-name {
+    align-self: stretch;
+  }
+  .label {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--small-text);
+    font-size: var(--small-text-size);
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    color: var(--color-gray);
+    text-align: left;
+    display: inline-block;
+    min-width: 158px;
+    padding: 0;
+  }
+  .field,
+  .input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .field {
+    align-self: stretch;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini);
+  }
+  .input {
+    width: 295px;
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .address,
+  .label1 {
+    font-weight: 500;
+    position: relative;
+    line-height: 150%;
+  }
+  .address {
+    align-self: stretch;
+  }
+  .label1 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--small-text);
+    font-size: var(--small-text-size);
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    color: var(--color-gray);
+    text-align: left;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .field1,
+  .input1 {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .field1 {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini);
+  }
+  .input1 {
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .label2,
+  .phone-number {
+    font-weight: 500;
+    position: relative;
+    line-height: 150%;
+  }
+  .phone-number {
+    align-self: stretch;
+  }
+  .label2 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--small-text);
+    font-size: var(--small-text-size);
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    color: var(--color-gray);
+    text-align: left;
+    display: inline-block;
+    min-width: 158px;
+    padding: 0;
+  }
+  .field2,
+  .input2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .field2 {
+    align-self: stretch;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini);
+  }
+  .input2 {
+    width: 295px;
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .email-address,
+  .label3 {
+    font-weight: 500;
+    position: relative;
+    line-height: 150%;
+  }
+  .email-address {
+    align-self: stretch;
+  }
+  .label3 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--small-text);
+    font-size: var(--small-text-size);
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    color: var(--color-gray);
+    text-align: left;
+    display: inline-block;
+    min-width: 250px;
+    white-space: nowrap;
+    max-width: 100%;
+    padding: 0;
+  }
+  .field3,
+  .input3 {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .field3 {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini);
+  }
+  .input3 {
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .grievance-type,
+  .label4 {
+    font-weight: 500;
+    position: relative;
+    line-height: 150%;
+  }
+  .grievance-type {
+    align-self: stretch;
+  }
+  .label4 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--small-text);
+    font-size: var(--small-text-size);
+    background-color: transparent;
+    height: 24px;
+    flex: 1;
+    color: var(--color-gray);
+    text-align: left;
+    display: inline-block;
+    min-width: 158px;
+    padding: 0;
+  }
+  .field4,
+  .input4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .field4 {
+    align-self: stretch;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini);
+  }
+  .input4 {
+    width: 295px;
+    flex-direction: column;
+    gap: var(--gap-5xs);
+  }
+  .grievance-details,
+  .label5 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .grievance-details {
+    align-self: stretch;
+  }
+  .label5 {
+    flex: 1;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .field5,
+  .input-parent,
+  .input5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .field5 {
+    align-self: stretch;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: var(--br-5xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-mini) 132px;
+    color: var(--color-gray);
+  }
+  .input-parent,
+  .input5 {
+    flex-direction: column;
+  }
+  .input5 {
+    align-self: stretch;
+    padding: 0 0 var(--padding-mini);
+    box-sizing: border-box;
+    gap: var(--gap-5xs);
+  }
+  .input-parent {
+    width: 638px;
+    gap: 33px;
+    z-index: 2;
+  }
+  .frame-item {
+    height: 49px;
+    width: 637px;
+    position: relative;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-gainsboro-200);
+    display: none;
+    max-width: 100%;
+  }
+  .file-upload-icon,
+  .label6 {
+    position: relative;
+    z-index: 1;
+  }
+  .file-upload-icon {
+    height: 28px;
+    width: 30.2px;
+    object-fit: cover;
+    min-height: 28px;
+  }
+  .label6 {
+    line-height: 150%;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 125px;
+  }
+  .label-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1px 0 0;
+  }
+  .button-icon,
+  .rectangle-group {
+    border-radius: var(--br-5xs);
+    max-width: 100%;
+    z-index: 2;
+  }
+  .rectangle-group {
+    align-self: stretch;
+    background-color: var(--color-gainsboro-200);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 7.9px var(--padding-xl) 13.1px;
+    box-sizing: border-box;
+    gap: 6px;
+  }
+  .button-icon {
+    height: 38px;
+    width: 411px;
+    object-fit: contain;
+  }
+  .button-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl) 0 22px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-parent {
+    width: 637px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 59px;
+    max-width: 100%;
+    font-size: 18px;
+    color: var(--color-gray);
+  }
+  .contact-form-inner,
+  .rectangle-parent {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .rectangle-parent {
+    flex: 1;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-cornflowerblue);
+    border: 1px solid var(--color-red);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 37px var(--padding-xl) 33px 29px;
+    gap: var(--gap-10xl);
+    z-index: 1;
+  }
+  .contact-form-inner {
+    width: 843px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 14px;
+    font-size: var(--small-text-size);
+  }
+  .contact-form {
+    position: relative;
+    background-color: var(--color-white);
+    border: 1px solid #e2d3d3;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 54px 296px 67px 27px;
+    gap: 49px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 48px;
+    color: var(--color-black);
+    font-family: var(--small-text);
+  }
+  @media screen and (max-width: 1350px) {
+    .header {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1125px) {
+    .rectangle-parent {
+      padding-top: 24px;
+      padding-bottom: 21px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .public-grievance-redressal {
+      font-size: 38px;
+    }
+    .header {
+      gap: 22px;
+    }
+    .input-parent {
+      gap: 16px;
+    }
+    .frame-parent {
+      gap: var(--gap-10xl);
+    }
+    .rectangle-parent {
+      padding-top: var(--padding-xl);
+      padding-bottom: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .contact-form {
+      gap: 24px;
+      padding-right: 148px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .public-grievance-redressal {
+      font-size: 29px;
+    }
+    .rectangle-group {
+      flex-wrap: wrap;
+    }
+    .contact-form {
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+
+
+.parent {
+    display: grid;
+    place-items: center; /* This will center the content both vertically and horizontally */
+    height: 100vh; /* This makes the container take up the full height of the viewport */
+    width: 100vw; /* This makes the container take up the full width of the viewport */
+}
+.button-wrapper:hover {
+  /* Add your hover styles here. For example: */
+  transform: scale(1.1); /* This will slightly enlarge the button */
+  cursor: pointer; /* This will change the cursor to a hand pointer */
+}
+
+.field4 select {
+  font-family: inherit; /* This will make the font the same as the parent element */
+  width: 100%; /* This will make the select dropdown fit the entire box */
+  box-sizing: border-box; /* This ensures padding and border are included in the element's total width and height */
+  background-color: white; /* This will make the background of the dropdown white */
+  color: gray; /* This will make the text color black */
+  padding: px; /* This will add some space around the text */
+  border: 1px solid #ccc; /* This will add a border similar to the email input */
+  border-radius: 4px; /* This will add rounded corners to the dropdown */
+  font-size: 16px; /* This will set the font size of the dropdown */
+}
+
+
+.rectangle-group {
+  cursor: pointer; /* This will change the cursor to a hand pointer */
+}
+
+.rectangle-group:hover {
+  transform: scale(1.05); /* This will slightly enlarge the rectangle-group */
+  transition: transform 0.1s ease-in-out; /* This will animate the transformation */
+}
+
+.rectangle-group:hover .label6,
+.rectangle-group:hover .file-upload-icon {
+  transform: scale(1.05); /* This will slightly enlarge the text and the image */
+  transition: transform 0.1s ease-in-out; /* This will animate the transformation */
+}
