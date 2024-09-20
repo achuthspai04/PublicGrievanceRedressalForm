@@ -10,44 +10,44 @@
 </head>
 <body>
   <div class="contact-form">
-    <img class="baground-vectors-icon" alt="" src="{{ url_for('static', filename='img/vector.png') }}" />
+    <img class="background-vectors-icon" alt="" src="{{ url_for('static', filename='img/vector.png') }}" />
     <div class="header">
       <img class="logo-icon" loading="lazy" alt="" src="{{ url_for('static', filename='img/logo.png') }}" />
       <h1 class="public-grievance-redressal">Public Grievance Redressal Form</h1>
     </div>
     <div class="contact-form-inner">
-      <form action="{{ url_for('submit_form') }}" method="POST" enctype="multipart/form-data">
+      <form id="UploadForm" action="{{ url_for('submit_form') }}" method="POST" enctype="multipart/form-data">
         <div class="rectangle-parent">
           <div class="frame-child"></div>
           <div class="input-parent">
             <div class="input">
               <div class="full-name">Full name</div>
               <div class="field">
-                <input class="label" name="full_name" placeholder="Achuth" type="text" />
-              </div>
+                <input class="label" name="full_name" placeholder="Achuth" type="text" required />
+              </div> 
             </div>
             <div class="input1">
               <div class="address">Address</div>
               <div class="field1">
-                <input class="label1" name="address" placeholder="S Pai" type="text" />
+                <input class="label1" name="address" placeholder="No 27, Rose Avenue, 680777" type="text" required/>
               </div>
             </div>
             <div class="input2">
               <div class="phone-number">Phone number</div>
               <div class="field2">
-                <input class="label2" name="phone_number" placeholder="9895XXXXXX" type="tel" maxlength="10"/>
+                <input class="label2" name="phone_number" placeholder="9895XXXXXX" type="tel" maxlength="10" required />
               </div>
             </div>
             <div class="input3">
               <div class="email-address">Email address</div>
               <div class="field3">
-                <input class="label3" name="email_address" placeholder="email@janesfakedomain.net" type="text" />
+                <input class="label3" name="email_address" placeholder="email@janesfakedomain.net" type="text" required />
               </div>
             </div>
             <div class="input4">
               <div class="grievance-type">Grievance Type</div>
               <div class="field4">
-                <select class="grievance-type" name="grievance_type">
+                <select class="grievance-type" name="grievance_type" required >
                   <option value="">Select a grievance type</option>
                   <option value="Roads Broken">Roads Broken</option>
                   <option value="Street Lights Not Working">Street Lights Not Working</option>
@@ -58,23 +58,31 @@
             <div class="input5">
               <div class="grievance-details">Grievance details</div>
               <div class="field5">
-                <input class="label4" name="grievance_details" placeholder="Enter the details of the grievance" type="text" />
+                <input class="label4" name="grievance_details" placeholder="Enter the details of the grievance" type="text" required />
               </div>
             </div>
           </div>
           <div class="frame-parent">
-            <div class="rectangle-group" id="rectangleGroup" onclick="triggerUpload()">
+            <div class="rectangle-group" id="rectangleGroup" onclick="triggerUpload()" >
               <div class="frame-item"></div>
               <img class="file-upload-icon" loading="lazy" alt="" src="{{ url_for('static', filename='img/upload.png') }}" />
               <div class="label-wrapper">
-                <input type="file" id="imageUpload" name="file" accept="image/*" style="display: none;">
+                <input type="file" id="imageUpload" name="file" accept="image/*" style="display: none;" required>
                 <div class="label6" id="uploadLabel">Upload image</div>
+                
               </div>
+              
             </div>
           </div>
+          <div id="fileUploadError" class="file-upload-error">*Image upload is required.</div>
           <div class="button-wrapper">
             <button type="submit" class="button-icon">
               <img src="{{ url_for('static', filename='img/button.png') }}" loading="lazy" alt="" />
+            </button>
+          </div>
+          <div class="button-wrapper">
+            <button id="displayButton" type="button" class="button-icon" disabl>
+              <img src="{{ url_for('static', filename='img/display.png') }}" loading="lazy" alt="" />
             </button>
           </div>
         </div>

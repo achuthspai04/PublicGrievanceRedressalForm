@@ -28,7 +28,4 @@ body {
     --padding-mini: 15px;
     --padding-3xs: 10px;
   
-    /* Border radiuses */
-    --br-3xs: 10px;
-    --br-5xs: 8px;
   }

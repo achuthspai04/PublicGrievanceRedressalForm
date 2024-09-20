@@ -31,6 +31,15 @@ def init_db():
 # Initialize the database
 init_db()
 
+def get_last_entry():
+    conn = sqlite3.connect('data.db')
+    cur = conn.cursor()
+    
+    cur.execute('SELECT * FROM grievances ORDER BY id DESC LIMIT 1')
+    last_entry = cur.fetchone()
+    conn.close()
+    return last_entry
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -71,7 +80,23 @@ def submit_form():
         finally:
             conn.close()
 
-        return 'Form submitted and file uploaded successfully'
+        return "Thank you for submitting your grievance. We will get back to you soon."
+
+@app.route('/display')
+def display_last_entry():
+    last_entry = get_last_entry()
+    if last_entry:
+        full_name, address, phone_number, email_address, grievance_type, grievance_details, image_path = last_entry[1:]
+        return render_template('display.html', 
+                               full_name=full_name, 
+                               address=address, 
+                               phone_number=phone_number, 
+                               email_address=email_address, 
+                               grievance_type=grievance_type, 
+                               grievance_details=grievance_details,
+                               image_path=image_path)
+    else:
+        return "No data was found in the database :(. Please add some data by visiting the <a href='/'>home</a> page."
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,19 +1,41 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // JavaScript to trigger the file input click when the label is clicked
-  function triggerUpload() {
-    document.getElementById('imageUpload').click();
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const imageUpload = document.getElementById('imageUpload');
+  const fileUploadError = document.getElementById('fileUploadError');
+  const uploadLabel = document.getElementById('uploadLabel');
 
-  // Event listener to handle the file upload
-  document.getElementById('imageUpload').addEventListener('change', function(event) {
+  imageUpload.addEventListener('change', (event) => {
     const file = event.target.files[0];
-    if (file) {
-      // Handle the file upload here
-      console.log('File selected:', file.name);
-      // You can add code here to display the image or upload it to a server
+    if (!file) return;
+
+    fileUploadError.style.display = 'none';
+    if (file.size > 5 * 1024 * 1024) {
+      fileUploadError.textContent = 'File size should not exceed 5MB.';
+      fileUploadError.style.display = 'block';
+      return;
     }
+
+    if (!file.type.match('image.*')) {
+      fileUploadError.textContent = 'Please select an image file.';
+      fileUploadError.style.display = 'block';
+      return;
+    }
+
+    const fileUrl = URL.createObjectURL(file);
+    displayFileUrl(fileUrl);
   });
 
-  // Assign triggerUpload to the global scope so it can be called from the onclick attribute
-  window.triggerUpload = triggerUpload;
+  function displayFileUrl(fileUrl) {
+    // Truncate URL if it's too long
+    let displayUrl = fileUrl.length > 50 ? fileUrl.substring(0, 47) + '...' : fileUrl;
+    uploadLabel.textContent = `Uploaded file URL: ${displayUrl}`;
+  }
+
+  window.triggerUpload = () => imageUpload.click();
+
+  const displayButton = document.getElementById('displayButton');
+  if (displayButton) {
+    displayButton.addEventListener('click', () => {
+      window.location.href = '/display';
+    });
+  }
 });

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/globaldisplay.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap"
+    />
+</head>
+<body>
+    <div class="submit">
+        <img
+            class="background-vectors-icon"
+            alt=""
+            src="{{ url_for('static', filename='img/vector.png') }}"
+        />
+
+        <div class="header">
+            <div class="back-button-wrapper">
+                <a href="/" id="backButton">
+                    <img class="back-icon" alt="" src="{{ url_for('static', filename='img/back button.png') }}">
+                </a>
+                
+            </div>
+            <div class="records-image-container-parent">
+                <div class="records-image-container">
+                    <img
+                        src="{{ url_for('static', filename='img/lsgd.png') }}"
+                    />
+                </div>
+                <h1 class="records">
+                    <p class="records1">Records.</p>
+                </h1>
+            </div>
+        </div>
+        <div class="form-container-wrapper">
+            <div class="form-container">
+                <div class="form-fields">
+                    <div class="contact-info">
+                        <div class="name-email-fields-wrapper">
+                            <div class="name-email-fields">
+                                <div class="name">Full name:</div>
+                                <div class="name-email-inputs" id="fullname">{{ full_name }}</div>
+                            </div>
+                        </div>
+                        <div class="address-fields-wrapper">
+                            <div class="address-fields">
+                                <div class="address-input-fields">
+                                    <div class="address">Address:</div>
+                                    <div class="address-holder">{{ address }}</div>
+                                </div>
+                                <div class="phone-number-parent">
+                                    <div class="phone-number">Phone number:</div>
+                                    <div class="phone-input-container" id="phone">{{ phone_number }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info-inner">
+                            <div class="email-address-parent">
+                                <div class="email-address">Email Address:</div>
+                                <div class="frame-child" id="email">{{ email_address }}</div>
+                            </div>
+                        </div>
+                        <div class="grievance-type-parent">
+                            <div class="grievance-type">Grievance type:</div>
+                            <div class="grievance-type-input-container">
+                              <div class="grievance-typ-holder">{{ grievance_type }}</div>
+                            </div>
+                        </div>
+                        <div class="grievance-details-parent">
+                            <div class="grievance-details">Grievance details:</div>
+                            <div class="details-input-container">
+                                <div class="detail-holder-parent">
+                                  <div class="detail-holder">{{ grievance_details }}</div>
+                                    <div class="details-input-border">
+                                        <img
+                                            class="main-rectangle-icon"
+                                            alt=""
+                                            src="{{ url_for('static', filename='img/Main rectangle.png') }}"
+                                        />
+
+                                        <img
+                                            class="details-input-border-child"
+                                            alt=""
+                                            src="{{ url_for('static', filename='img/Line1.png') }}"
+                                        />
+
+                                        <input class="details-border" type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-parent">
+                    <img class="uploaded-image" src="{{ image_path }}">
+                    <div class="uploaded">
+                        <img src="{{ url_for('static', filename='img/uploaded.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
